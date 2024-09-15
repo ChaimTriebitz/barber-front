@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
+import { msgEvent } from '../functions'
+import { svgs } from '../assets/svgs'
 
-import { msgEvent } from './msgEvent'
-import { svgs } from './assets/svgs'
 
 export const Msg = () => {
 

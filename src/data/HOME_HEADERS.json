@@ -1,0 +1,38 @@
+{
+   "appintments": [
+      {
+         "name": "Actions",
+         "cell_type": "multi_cell",
+         "headers": [
+            {
+               "cell_type": "remove"
+            }
+         ]
+      },
+      {
+         "name": "Customer",
+         "internal_name": "customer",
+         "cell_type": "text"
+      },
+      {
+         "name": "Date",
+         "internal_name": "date",
+         "sub_cell_type": "date",
+         "format": "yyyy MMM d"
+      },
+      {
+         "name": "Time",
+         "internal_name": "date_created",
+         "sub_cell_type": "date",
+         "format": "yyyy MMM d"
+      },
+      {
+         "name": "Barber",
+         "internal_name": "barber"
+      },
+      {
+         "name": "Service",
+         "internal_name": "service"
+      }
+   ]
+}

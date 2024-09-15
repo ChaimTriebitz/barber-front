@@ -1,8 +1,5 @@
-import { Msg } from './Msg'
-import { Header } from './Header'
-import { Main } from './Main'
-import { Footer } from './Footer'
-import { Form } from './cmps'
+import { Footer, Header, Main, Msg } from './cmps'
+
 
 
 
@@ -14,8 +11,7 @@ function App() {
    return (
       <div className="App" >
          <Msg />
-         <Form />
-         {/* <Header /> */}
+         <Header />
          <Main />
          <Footer />
       </div>

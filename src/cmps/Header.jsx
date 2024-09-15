@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import logo from '../src/assets/imgs/logo.webp';
+import logo from '../assets/imgs/chagai.webp';
 
 const links = [
    { name: 'Home', link: '/' },

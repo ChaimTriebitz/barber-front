@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import { About, Home, Impact, News, Resources } from './pages'
+import { About, Home, Impact, News, Resources } from '../pages'
 
 export const Main = () => {
    return (

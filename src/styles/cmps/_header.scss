@@ -1,8 +1,4 @@
 .header {
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
    height: 10vh;
    background: $lg1;
    padding: 1em 2em;
@@ -20,7 +16,7 @@
       .link {
          display: flex;
          align-items: center;
-         color: $c2;
+         color: $c1;
       }
    }
 }

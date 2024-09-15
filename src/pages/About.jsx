@@ -1,7 +1,9 @@
 import React from 'react'
+import { Form } from '../cmps'
 
 export const About = () => {
-  return (
-    <div>About</div>
-  )
+   return (
+      <div>         <Form />
+      </div>
+   )
 }
