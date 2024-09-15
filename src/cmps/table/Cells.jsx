@@ -1,14 +1,11 @@
-import { Text } from '..'
+import { Date, DropDown, Remove, Select, Text} from '..'
 
 export const Cells = ({row, header }) => {
-console.log(header.cell_type);
-
    switch (header.cell_type) {
-      // case 'remove': return <Remove Row={Row} />
-      // case 'select': return <Select Row={Row} />
-      // case 'image': return <Image value={value} field={header}/>
-      // case 'status': return <Status  value={value} Row={Row} field={header} />
-      // case 'dropDown': return <DropDown Row={Row} field={header}  />
+      case 'remove': return <Remove row={row} />
+      case 'select': return <Select row={row} />
+      case 'dropDown': return <DropDown row={row} header={header}  />
       case 'text': return <Text row={row} header={header} />
+      case 'date': return <Date row={row} header={header} />
    }
 }

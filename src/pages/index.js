@@ -1,13 +1,9 @@
-import{ Home} from './Home.jsx';
-import{ About} from './About.jsx';
-import{ Resources} from './Resources.jsx';
-import{ News} from './News.jsx';
-import{ Impact} from './Impact.jsx';
+import { Home } from './Home.jsx';
+import { Form } from './Form.jsx';
+import { Appointments } from './Appointments.jsx';
 
-export{
+export {
    Home,
-   About,
-   Resources,
-   News,
-   Impact
+   Appointments,
+   Form
 }

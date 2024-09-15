@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Table } from '../../cmps';
-import { HOME_HEADERS } from '../../data';
+import { Table } from '../cmps';
+import { HOME_HEADERS } from '../data';
 
 
 

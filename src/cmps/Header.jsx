@@ -3,10 +3,8 @@ import logo from '../assets/imgs/chagai.webp';
 
 const links = [
    { name: 'Home', link: '/' },
-   { name: 'About', link: '/about' },
-   { name: 'Resources', link: '/resources' },
-   { name: 'News', link: '/news' },
-   { name: 'Impact', link: '/impact' }
+   { name: 'Customer', link: '/customer' },
+   { name: 'Appointments', link: '/appointments' },
 ]
 
 export const Header = () => {

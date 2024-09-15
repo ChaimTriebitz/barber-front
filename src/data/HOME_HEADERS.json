@@ -17,14 +17,14 @@
       {
          "name": "Date",
          "internal_name": "date",
-         "sub_cell_type": "date",
-         "format": "yyyy MMM d"
+         "cell_type": "date",
+         "format": "MMM d yyyy"
       },
       {
          "name": "Time",
          "internal_name": "date_created",
-         "sub_cell_type": "date",
-         "format": "yyyy MMM d"
+         "cell_type": "date",
+         "format": "HH:mm"
       },
       {
          "name": "Barber",

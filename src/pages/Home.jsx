@@ -1,10 +1,9 @@
 import React from 'react'
-import { Appointments } from '../cmps'
 
 export const Home = () => {
    return (
       <div>
-         <Appointments />
+        <h1>Home sweet home</h1>
       </div>
    )
 }

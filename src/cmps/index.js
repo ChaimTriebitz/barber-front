@@ -9,13 +9,13 @@ import { Thead } from './table/Thead.jsx'
 import { Tbody } from './table/Tbody.jsx'
 import { Cells } from './table/Cells.jsx'
 import { Text } from './table/cells/Text.jsx'
+import { Date } from './table/cells/Date.jsx'
 import { Remove } from './table/cells/Remove.jsx'
 import { Select } from './table/cells/Select.jsx'
-// import { Text } from './table/cells/Text.jsx'
+import { DropDown } from './table/cells/DropDown.jsx'
 
 // appoinment
-import { Form } from './appoinment/Form.jsx'
-import { Appointments } from './appoinment/Appointments.jsx'
+import { Form } from '../pages/Form.jsx'
 
 export {
    Msg,
@@ -27,6 +27,9 @@ export {
    Tbody,
    Cells,
    Text,
+   Date,
+   DropDown,
+   Remove,
+   Select,
    Form,
-   Appointments
 }
