@@ -1,0 +1,6 @@
+{
+   "RELOAD_DATA": "RELOAD_DATA",
+   "SET": "SET",
+   "PUSH": "PUSH",
+   "POP": "POP"
+}

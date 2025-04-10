@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react'
-import { msgEvent } from '../functions'
-import { svgs } from '../assets/svgs'
 
+import { events } from './../functions'
+import { svgsMap } from './../assets'
 
 export const Msg = () => {
 
-   const [msg, setMsg] = useState(null)
+   const [msg, setMsg] = useState({})
    const [isHidden, setIsHidden] = useState(true)
 
    useEffect(() => {
-      let removeEvent = msgEvent.on('show-msg', (msg) => {
+      let removeEvent = events.listen('show-msg', (msg) => {
          setMsg(msg)
          setIsHidden(false)
          hideMsg(2500)
@@ -24,23 +24,17 @@ export const Msg = () => {
          setIsHidden(true)
       }, delay)
       setTimeout(() => {
-         setMsg(null)
+         setMsg({})
       }, delay + 1000)
    }
 
-   const getIcon = () => {
-      switch (msg?.type) {
-         case 'success': return svgs.check || '✅'
-         case 'warning': return svgs.exclamation || '!'
-         default: return ''
-      }
-   }
+   const { type = '', txt = '' } = msg
 
    return (
-      <div className={`msg ${msg ? 'show' : ''} ${isHidden ? 'hide' : ''} ${msg ? msg.type : ''}`}>
-         <span>{getIcon()}</span>
-         <h1>{msg ? msg.txt : ''}</h1>
-         <button className="close-btn" onClick={() => hideMsg(0)}>{svgs.clear || '❌'}</button>
+      <div className={`msg ${type ? 'show' : ''} ${isHidden ? 'hide' : ''} ${type}`}>
+         <span>{svgsMap.msg[type]}</span>
+         <h6>{txt || ''}</h6>
+         <button className="close-btn" onClick={() => hideMsg(0)}>x</button>
       </div>
    )
 }
